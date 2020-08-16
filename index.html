@@ -17,9 +17,13 @@
 
 <body>
 
-	
-	
+	<div id="feed">
+		<chirp v-for="item in chirps" v-bind:chirpobj="item" v-bind:key="item.id">
+		</chirp>
+	</div>
+
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="vendor/vue/vue.js"></script>
 	<script src="index.js"></script>
 
 </body>
